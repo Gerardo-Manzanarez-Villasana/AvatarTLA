@@ -41,6 +41,13 @@ names(avatar_palettes)
 
 # Inspiration
 
+<figure>
+<img src="E:/GitHub/Gerardo/Avatar/AvatarTLA/imagenes/aang.jpg"
+alt="Aang, the Last Airbender by Yueko" />
+<figcaption aria-hidden="true">Aang, the Last Airbender by
+Yueko</figcaption>
+</figure>
+
 # Color palette inspired by Aang
 
 ``` r
@@ -52,6 +59,13 @@ avatar_palette("Aang")
 # Toph
 
 # Inspiration
+
+<figure>
+<img src="E:/GitHub/Gerardo/Avatar/AvatarTLA/imagenes/toph.jpg"
+alt="Toph, the Blind Bandit by Yueko" />
+<figcaption aria-hidden="true">Toph, the Blind Bandit by
+Yueko</figcaption>
+</figure>
 
 # Color palette inspired by Toph
 
@@ -77,8 +91,9 @@ avatar_palette("Suki")
 
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 
-``` r
 # Discrete bar plot with Suki palette (4 colors)
+
+``` r
 ggplot(mpg, aes(x = drv, fill = drv)) +
   geom_bar() +
   scale_fill_manual(values = avatar_palette("Suki")) +
@@ -133,8 +148,9 @@ avatar_palette("Azula")
 
 <img src="man/figures/README-unnamed-chunk-13-1.png" width="100%" />
 
-``` r
 # Boxplot with Azula palette (subset to 3 colors)
+
+``` r
 ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) +
   geom_boxplot() +
   scale_fill_manual(values = avatar_palette("Azula", 3)) +
@@ -198,17 +214,18 @@ avatar_palette("EarthKingdom")
 
 <img src="man/figures/README-unnamed-chunk-20-1.png" width="100%" />
 
+# Continuous heatmap using the EarthKingdom palette
+
 ``` r
-# Continuous scatter plot with EarthKingdom palette
-ggplot(diamonds[1:100, ], aes(x = carat, y = price, color = depth)) +
-  geom_point(alpha = 0.8, size = 2) +
-  scale_color_gradientn(colors = avatar_palette("EarthKingdom", 100, type = "continuous")) +
+ggplot(faithfuld, aes(x = eruptions, y = waiting, fill = density)) +
+  geom_tile() +
+  scale_fill_gradientn(colors = avatar_palette("EarthKingdom", 100, type = "continuous")) +
   theme_minimal() +
   labs(
-    title = "Diamond Price vs. Carat",
-    x = "Carat",
-    y = "Price ($)",
-    color = "Depth"
+    title = "Old Faithful Eruption Density",
+    x = "Eruption Duration (min)",
+    y = "Waiting Time (min)",
+    fill = "Density"
   )
 ```
 
@@ -249,5 +266,12 @@ avatar_palette("WaterTribe")
   creators of the Nickelodeon series are Michael Dante DiMartino and
   Bryan Konietzko
 
-Feel free to leave character suggestions or any comments Best regards -
-Gerardo Manzanarez-Villasana **Glochids are forever**
+# 
+
+Feel free to leave character suggestions or any comments
+
+Best regards
+
+**Gerardo Manzanarez-Villasana**
+
+**Glochids are forever**

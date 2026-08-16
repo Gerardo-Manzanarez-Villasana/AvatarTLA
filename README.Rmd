@@ -45,6 +45,7 @@ names(avatar_palettes)
 
 # Inspiration
 
+![Aang, the Last Airbender by Yueko ](E:/GitHub/Gerardo/Avatar/AvatarTLA/imagenes/aang.jpg)
 
 # Color palette inspired by Aang
 
@@ -56,6 +57,7 @@ avatar_palette("Aang")
 
 # Inspiration
 
+![Toph, the Blind Bandit by Yueko ](E:/GitHub/Gerardo/Avatar/AvatarTLA/imagenes/toph.jpg)
 
 # Color palette inspired by Toph
 
@@ -75,8 +77,9 @@ avatar_palette("Mai")
 avatar_palette("Suki")
 ```
 
-```{r}
 # Discrete bar plot with Suki palette (4 colors)
+
+```{r}
 ggplot(mpg, aes(x = drv, fill = drv)) +
   geom_bar() +
   scale_fill_manual(values = avatar_palette("Suki")) +
@@ -119,8 +122,9 @@ avatar_palette("Sokka")
 avatar_palette("Azula")
 ```
 
-```{r}
 # Boxplot with Azula palette (subset to 3 colors)
+
+```{r}
 ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) +
   geom_boxplot() +
   scale_fill_manual(values = avatar_palette("Azula", 3)) +
@@ -170,17 +174,18 @@ avatar_palette("AirNomads")
 avatar_palette("EarthKingdom")
 ```
 
+# Continuous heatmap using the EarthKingdom palette
+
 ```{r}
-# Continuous scatter plot with EarthKingdom palette
-ggplot(diamonds[1:100, ], aes(x = carat, y = price, color = depth)) +
-  geom_point(alpha = 0.8, size = 2) +
-  scale_color_gradientn(colors = avatar_palette("EarthKingdom", 100, type = "continuous")) +
+ggplot(faithfuld, aes(x = eruptions, y = waiting, fill = density)) +
+  geom_tile() +
+  scale_fill_gradientn(colors = avatar_palette("EarthKingdom", 100, type = "continuous")) +
   theme_minimal() +
   labs(
-    title = "Diamond Price vs. Carat",
-    x = "Carat",
-    y = "Price ($)",
-    color = "Depth"
+    title = "Old Faithful Eruption Density",
+    x = "Eruption Duration (min)",
+    y = "Waiting Time (min)",
+    fill = "Density"
   )
 ```
 
@@ -209,7 +214,12 @@ avatar_palette("WaterTribe")
 
 - The sample images shown are for illustrative purposes only. The creators of the Nickelodeon series are Michael Dante DiMartino and Bryan Konietzko
 
+# 
+
 Feel free to leave character suggestions or any comments
+
 Best regards
-- Gerardo Manzanarez-Villasana
+
+**Gerardo Manzanarez-Villasana**
+
 **Glochids are forever**
