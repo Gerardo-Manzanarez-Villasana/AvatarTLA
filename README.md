@@ -89,7 +89,7 @@ avatar_palette("Suki")
 
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 
-# Discrete bar plot with Suki palette (4 colors)
+# Discrete bar plot with Suki palette
 
 ``` r
 ggplot(mpg, aes(x = drv, fill = drv)) +
@@ -146,7 +146,7 @@ avatar_palette("Azula")
 
 <img src="man/figures/README-unnamed-chunk-13-1.png" width="100%" />
 
-# Boxplot with Azula palette (subset to 3 colors)
+# Boxplot with Azula palette
 
 ``` r
 ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) +
