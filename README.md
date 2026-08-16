@@ -1,38 +1,47 @@
 
-# AvatarTLA: Color palettes
+# AvatarTLA
 
-\#Instalación
+- AvatarTLA provides color palettes inspired by characters and nations
+  from the animated series Avatar: The Last Airbender for R graphics.
+  The package structure and syntax are modeled after the popular
+  [wesanderson](https://github.com/karthik/wesanderson/tree/master)
+  package.
 
-Puedes instalar la versión del desarollador de AvatarTLA de:
+# Installation
+
+- You can install the development version of AvatarTLA from GitHub with:
 
 ``` r
+# install.packages("devtools")
 devtools::install_github("Gerardo-Manzanarez-Villasana/AvatarTLA")
-#> Using GitHub PAT from the git credential store.
-#> Skipping install of 'AvatarTLA' from a github remote, the SHA1 (7e92ed94) has not changed since last install.
-#>   Use `force = TRUE` to force installation
 ```
 
-\#Como usar
+# Usage
 
 ``` r
 library("AvatarTLA")
 
-# Ver las paletas
+library(ggplot2)
+
+# List all available palette names
 names(avatar_palettes)
 #>  [1] "Mai"          "Suki"         "Iroh"         "FireNation"   "AirNomads"   
 #>  [6] "EarthKingdom" "WaterTribe"   "Appa"         "Sokka"        "Toph"        
-#> [11] "Azula"        "Aang"         "Zuko"         "Katara"
+#> [11] "Azula"        "Aang"         "Zuko"         "Katara"       "Ty"          
+#> [16] "Momo"
 ```
 
-\#Lista de paletas completas
+# Palette Previews
 
-\#Personajes
+- You can inspect all available palettes using avatar_palette()
 
-\#Aang
+# Characters
 
-\#Inspiración
+# Aang
 
-\#Paleta de color inspierada en Aang
+# Inspiration
+
+# Color palette inspired by Aang
 
 ``` r
 avatar_palette("Aang")
@@ -40,11 +49,11 @@ avatar_palette("Aang")
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
-\#Toph
+# Toph
 
-\#Inspiración
+# Inspiration
 
-\#Paleta de color inspirada en Toph
+# Color palette inspired by Toph
 
 ``` r
 avatar_palette("Toph")
@@ -52,7 +61,7 @@ avatar_palette("Toph")
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
-\#Mai
+# Mai
 
 ``` r
 avatar_palette("Mai")
@@ -60,7 +69,7 @@ avatar_palette("Mai")
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
-\#Suki
+# Suki
 
 ``` r
 avatar_palette("Suki")
@@ -68,55 +77,102 @@ avatar_palette("Suki")
 
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 
-\#Iroh
+``` r
+# Discrete bar plot with Suki palette (4 colors)
+ggplot(mpg, aes(x = drv, fill = drv)) +
+  geom_bar() +
+  scale_fill_manual(values = avatar_palette("Suki")) +
+  theme_minimal() +
+  labs(
+    title = "Drive Trains with Suki Palette",
+    x = "Drive Train",
+    y = "Count"
+  ) +
+  theme(legend.position = "none")
+```
+
+<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
+
+# Momo
+
+``` r
+avatar_palette("Momo")
+```
+
+<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
+
+# Iroh
 
 ``` r
 avatar_palette("Iroh")
 ```
 
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
 
-\#Appa
+# Appa
 
 ``` r
 avatar_palette("Appa")
 ```
 
-<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-11-1.png" width="100%" />
 
-\#Sokka
+# Sokka
 
 ``` r
 avatar_palette("Sokka")
 ```
 
-<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-12-1.png" width="100%" />
 
-\#Azula
+# Azula
 
 ``` r
 avatar_palette("Azula")
 ```
 
-<img src="man/figures/README-unnamed-chunk-11-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-13-1.png" width="100%" />
 
-\#Zuko
+``` r
+# Boxplot with Azula palette (subset to 3 colors)
+ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) +
+  geom_boxplot() +
+  scale_fill_manual(values = avatar_palette("Azula", 3)) +
+  theme_light() +
+  labs(
+    title = "Sepal Length Across Species",
+    x = "Species",
+    y = "Sepal Length (cm)"
+  )
+```
+
+<img src="man/figures/README-unnamed-chunk-14-1.png" width="100%" />
+
+# Zuko
 
 ``` r
 avatar_palette("Zuko")
 ```
 
-<img src="man/figures/README-unnamed-chunk-12-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-15-1.png" width="100%" />
 
-\#Katara
+# Katara
 
 ``` r
 avatar_palette("Katara")
 ```
 
-<img src="man/figures/README-unnamed-chunk-13-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-16-1.png" width="100%" />
 
-\#Naciones
+# Ty Lee
+
+``` r
+avatar_palette("Ty")
+```
+
+<img src="man/figures/README-unnamed-chunk-17-1.png" width="100%" />
+
+# Avatar Nations
 
 # Fire Nation
 
@@ -124,7 +180,7 @@ avatar_palette("Katara")
 avatar_palette("FireNation")
 ```
 
-<img src="man/figures/README-unnamed-chunk-14-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-18-1.png" width="100%" />
 
 # Air Nomads
 
@@ -132,7 +188,7 @@ avatar_palette("FireNation")
 avatar_palette("AirNomads")
 ```
 
-<img src="man/figures/README-unnamed-chunk-15-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-19-1.png" width="100%" />
 
 # Earth Kingdom
 
@@ -140,27 +196,23 @@ avatar_palette("AirNomads")
 avatar_palette("EarthKingdom")
 ```
 
-<img src="man/figures/README-unnamed-chunk-16-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-20-1.png" width="100%" />
 
 ``` r
-
-library(ggplot2)
-
-# Custom color scale using EarthKingdom palette
-earth_colors <- avatar_palette("EarthKingdom")
-
-ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
-  geom_point(size = 3) +
-  scale_color_manual(values = earth_colors) +
+# Continuous scatter plot with EarthKingdom palette
+ggplot(diamonds[1:100, ], aes(x = carat, y = price, color = depth)) +
+  geom_point(alpha = 0.8, size = 2) +
+  scale_color_gradientn(colors = avatar_palette("EarthKingdom", 100, type = "continuous")) +
   theme_minimal() +
   labs(
-    title = "Iris Dataset with Earth Kingdom Palette",
-    x = "Sepal Length",
-    y = "Sepal Width"
+    title = "Diamond Price vs. Carat",
+    x = "Carat",
+    y = "Price ($)",
+    color = "Depth"
   )
 ```
 
-<img src="man/figures/README-unnamed-chunk-16-2.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-21-1.png" width="100%" />
 
 # Water Tribe
 
@@ -168,38 +220,34 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
 avatar_palette("WaterTribe")
 ```
 
-<img src="man/figures/README-unnamed-chunk-17-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-22-1.png" width="100%" />
 
-# Creditos de paletas e imagenes
+# Credits
 
 # Logo
 
-- El logo es elaborado por la artista [Adri Alicee
+- The logo was created by the artist [Adri Alicee
   Art](https://www.instagram.com/daydrawing97/?hl=es-la)
 
-# Paletas de naciones
+# Nation Palettes
 
-- Las paletas de las naciones fueron inspiradas en el paquete [tvthemes
-  1.3.1](https://github.com/Ryo-N7/tvthemes). Creditos a sus autores
+- The nation palettes were inspired by the [tvthemes
+  1.3.1](https://github.com/Ryo-N7/tvthemes) package. Credit goes to its
+  authors
 
-# Paletas de personajes
+# Character Palettes
 
-- La paletas de loss personajes: Suki, Mai y Momo, fueron elaboradas por
-  mí con la ayuda de la pagina [Coolors](https://coolors.co)
-- El resto de personajes fueron sacados de la pagina
-  [Schemecolor](https://www.schemecolor.com/palettes/avatar-the-last-airbender).
-  Todos los creditos a sus respectivos autores
+- The color palettes for the characters—Suki, Mai, and Momo—were created
+  by me with the help of the [Coolors](https://coolors.co) website
+- The rest of the characters’ palettes were taken from the
+  [Schemecolor](https://www.schemecolor.com/palettes/avatar-the-last-airbender)
+  website. All credit goes to their respective creators
 
-\#Imagenes de personajes
+# Character Images
 
-- Las imagenes mostradas de ejemplo son solo ilustrativas, los autores
-  Michael Dante DiMartino y Bryan Konietzko creadores de la serie para
-  Nickelodeon
+- The sample images shown are for illustrative purposes only. The
+  creators of the Nickelodeon series are Michael Dante DiMartino and
+  Bryan Konietzko
 
-# No dudes en dejar sugerencias de personajes o cualquier comentario
-
-# Saludos
-
-# -GMV
-
-# **Glochids are forever**
+Feel free to leave character suggestions or any comments Best regards -
+Gerardo Manzanarez-Villasana **Glochids are forever**
