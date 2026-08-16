@@ -14,15 +14,6 @@
 ``` r
 # install.packages("devtools")
 devtools::install_github("Gerardo-Manzanarez-Villasana/AvatarTLA")
-#> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>          checking for file 'C:\Users\Gerardo Manzanarez\AppData\Local\Temp\Rtmpsn8fvc\remotes55d02b3044f8\Gerardo-Manzanarez-Villasana-AvatarTLA-b067ef8a46bc18ac05e6473722c9de1274b97925/DESCRIPTION' ...  ✔  checking for file 'C:\Users\Gerardo Manzanarez\AppData\Local\Temp\Rtmpsn8fvc\remotes55d02b3044f8\Gerardo-Manzanarez-Villasana-AvatarTLA-b067ef8a46bc18ac05e6473722c9de1274b97925/DESCRIPTION'
-#>       ─  preparing 'AvatarTLA':
-#>    checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
-#>       ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#>       ─  building 'AvatarTLA_0.1.0.tar.gz'
-#>      
-#> 
 ```
 
 # Usage
