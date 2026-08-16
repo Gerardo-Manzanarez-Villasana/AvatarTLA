@@ -1,7 +1,7 @@
 
 # AvatarTLA: Color palettes
 
-## Instalación
+\#Instalación
 
 Puedes instalar la versión del desarollador de AvatarTLA de:
 
@@ -12,7 +12,7 @@ devtools::install_github("Gerardo-Manzanarez-Villasana/AvatarTLA")
 #>   Use `force = TRUE` to force installation
 ```
 
-## Como usar
+\#Como usar
 
 ``` r
 library("AvatarTLA")
@@ -23,6 +23,10 @@ names(avatar_palettes)
 #>  [6] "EarthKingdom" "WaterTribe"   "Appa"         "Sokka"        "Toph"        
 #> [11] "Azula"        "Aang"         "Zuko"         "Katara"
 ```
+
+\#Lista de paletas completas
+
+\#Personajes
 
 \#Aang
 
@@ -48,10 +52,6 @@ avatar_palette("Toph")
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
-\#Lista de paletas completas
-
-\#Personajes
-
 \#Mai
 
 ``` r
@@ -76,13 +76,45 @@ avatar_palette("Iroh")
 
 <img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
 
-# 
+\#Appa
 
 ``` r
-avatar_palette("Toph")
+avatar_palette("Appa")
 ```
 
 <img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
+
+\#Sokka
+
+``` r
+avatar_palette("Sokka")
+```
+
+<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
+
+\#Azula
+
+``` r
+avatar_palette("Azula")
+```
+
+<img src="man/figures/README-unnamed-chunk-11-1.png" width="100%" />
+
+\#Zuko
+
+``` r
+avatar_palette("Zuko")
+```
+
+<img src="man/figures/README-unnamed-chunk-12-1.png" width="100%" />
+
+\#Katara
+
+``` r
+avatar_palette("Katara")
+```
+
+<img src="man/figures/README-unnamed-chunk-13-1.png" width="100%" />
 
 \#Naciones
 
@@ -92,7 +124,7 @@ avatar_palette("Toph")
 avatar_palette("FireNation")
 ```
 
-<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-14-1.png" width="100%" />
 
 # Air Nomads
 
@@ -100,7 +132,7 @@ avatar_palette("FireNation")
 avatar_palette("AirNomads")
 ```
 
-<img src="man/figures/README-unnamed-chunk-11-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-15-1.png" width="100%" />
 
 # Earth Kingdom
 
@@ -108,7 +140,27 @@ avatar_palette("AirNomads")
 avatar_palette("EarthKingdom")
 ```
 
-<img src="man/figures/README-unnamed-chunk-12-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-16-1.png" width="100%" />
+
+``` r
+
+library(ggplot2)
+
+# Custom color scale using EarthKingdom palette
+earth_colors <- avatar_palette("EarthKingdom")
+
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+  geom_point(size = 3) +
+  scale_color_manual(values = earth_colors) +
+  theme_minimal() +
+  labs(
+    title = "Iris Dataset with Earth Kingdom Palette",
+    x = "Sepal Length",
+    y = "Sepal Width"
+  )
+```
+
+<img src="man/figures/README-unnamed-chunk-16-2.png" width="100%" />
 
 # Water Tribe
 
@@ -116,7 +168,7 @@ avatar_palette("EarthKingdom")
 avatar_palette("WaterTribe")
 ```
 
-<img src="man/figures/README-unnamed-chunk-13-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-17-1.png" width="100%" />
 
 # Creditos de paletas e imagenes
 
@@ -148,8 +200,6 @@ avatar_palette("WaterTribe")
 
 # Saludos
 
-# GMV
+# -GMV
 
-# Glochids are forever
-
-\#’ , \#’ , \#’ , \#’ , \#’ , \#’ , \#’ , \#’ , \#’ E
+# **Glochids are forever**

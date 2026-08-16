@@ -66,11 +66,6 @@ avatar_palette("Mai")
 avatar_palette("Suki")
 ```
 
-#Momo
-
-```{r}
-avatar_palette("Momo")
-```
 
 #Iroh
 
@@ -108,11 +103,6 @@ avatar_palette("Zuko")
 avatar_palette("Katara")
 ```
 
-#Ty Lee
-
-```{r}
-avatar_palette("Ty")
-```
 
 #Naciones 
 
