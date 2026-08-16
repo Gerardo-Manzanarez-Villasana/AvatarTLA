@@ -6,7 +6,7 @@
 avatar_palettes <- list(
   Mai = c("#982c2c", "#712929", "#4c2828", "#361818", "#000000"),
   Suki = c("#729663", "#FFFEE6", "#FFBB40", "#E15D40"),
-  Iroh = c("#1E3414", "#737E44", "#CDAB43", "#E4DEAF", "#F9F8F6", "#ECCAB0"),
+  Iroh = c("#1E3414", "#737E44", "#CDAB43", "#E4DEAF", "#ECCAB0"),
   FireNation = c("#ecb100", "#a10000", "#7E605E", "#FF4500", "#994823",
                  "#4B4C4E", "#572530", "#000000"),
   AirNomads = c("#ff9933", "#C24841", "#FFFF33", "#8B5B45", "#87AFD1",
@@ -14,14 +14,16 @@ avatar_palettes <- list(
   EarthKingdom = c("#015E05", "#B1A866", "#7A5C12", "#646742", "#25351C",
                    "#4C7022", "#C7C45E", "#D2CFAB", "#FEFED8"),
   WaterTribe = c("#0047ab", "#1DB4D3", "#A2CAED", "#AFB5B8", "#120976",
-                 "#fffafa", "#174D79", "#949BBC"),
+                 "#174D79", "#949BBC"),
   Appa = c("#6C633B","#591509","#936F50","#FEF7DB","#E7CE9A","#4A4F4F"),
-  Sokka = c("#488ECB","#F6F5F4","#E7C2A5","#7C6A66","#5A3D2F","#A27F43"),
-  Toph = c("#1C2824","#437C1E","#F1EFC2","#FBFBFB","#F7D7B7","#BEB718"),
+  Sokka = c("#488ECB","#E7C2A5","#7C6A66","#5A3D2F","#A27F43"),
+  Toph = c("#1C2824","#437C1E","#F1EFC2","#F7D7B7","#BEB718"),
   Azula = c("#010101","#713011","#ECD8C0","#9F6B22"),
   Aang = c("#F9EFE3","#B6D7F4","#F4C135","#EE7223","#6E1700","#715447"),
   Zuko = c("#441100","#6E3208","#A77510","#E6BD9E","#A46A44"),
-  Katara = c("#007CC3","#50413A","#FEFEFE","#F1DCC9","#A5A9AC","#383C1A")
+  Katara = c("#007CC3","#50413A","#F1DCC9","#A5A9AC","#383C1A"),
+  Ty = c("#BB7169","#691400","#AE2F24","#ECD5A8","#2F1D01"),
+  Momo = c("#4A422E","#6C4C32","#8AA15D","#FBF6D8","#1C1919")
 )
 
 #' An Avatar: The Last Airbender palette generator
@@ -42,7 +44,9 @@ avatar_palettes <- list(
 #'   \code{Azula},
 #'   \code{Aang},
 #'   \code{Zuko},
-#'   \code{Katara}
+#'   \code{Katara},
+#'   \code{Ty},
+#'   \code{Momo}
 #' @param n Number of desired colors. If omitted, uses all colors from the palette.
 #' @param type Either "discrete" or "continuous". Use continuous if you want
 #'   to automatically interpolate between colors.
