@@ -15,7 +15,7 @@
 # install.packages("devtools")
 devtools::install_github("Gerardo-Manzanarez-Villasana/AvatarTLA")
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>          checking for file 'C:\Users\Gerardo Manzanarez\AppData\Local\Temp\RtmpYZL2MB\remotes5bb070021192\Gerardo-Manzanarez-Villasana-AvatarTLA-b2ccb1f6d71eca0693f4ba66555b8ca224d9baec/DESCRIPTION' ...  ✔  checking for file 'C:\Users\Gerardo Manzanarez\AppData\Local\Temp\RtmpYZL2MB\remotes5bb070021192\Gerardo-Manzanarez-Villasana-AvatarTLA-b2ccb1f6d71eca0693f4ba66555b8ca224d9baec/DESCRIPTION'
+#>          checking for file 'C:\Users\Gerardo Manzanarez\AppData\Local\Temp\Rtmpsn8fvc\remotes55d02b3044f8\Gerardo-Manzanarez-Villasana-AvatarTLA-b067ef8a46bc18ac05e6473722c9de1274b97925/DESCRIPTION' ...  ✔  checking for file 'C:\Users\Gerardo Manzanarez\AppData\Local\Temp\Rtmpsn8fvc\remotes55d02b3044f8\Gerardo-Manzanarez-Villasana-AvatarTLA-b067ef8a46bc18ac05e6473722c9de1274b97925/DESCRIPTION'
 #>       ─  preparing 'AvatarTLA':
 #>    checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
 #>       ─  checking for LF line-endings in source and make files and shell scripts
@@ -51,8 +51,7 @@ names(avatar_palettes)
 # Inspiration
 
 <figure>
-<img src="E:/GitHub/Gerardo/Avatar/AvatarTLA/fig/aang.jpg"
-alt="Aang, the Last Airbender by Yueko" />
+<img src="fig/aang.jpg" alt="Aang, the Last Airbender by Yueko" />
 <figcaption aria-hidden="true">Aang, the Last Airbender by
 Yueko</figcaption>
 </figure>
@@ -70,8 +69,7 @@ avatar_palette("Aang")
 # Inspiration
 
 <figure>
-<img src="E:/GitHub/Gerardo/Avatar/AvatarTLA/fig/toph.jpg"
-alt="Toph, the Blind Bandit by Yueko" />
+<img src="fig/toph.jpg" alt="Toph, the Blind Bandit by Yueko" />
 <figcaption aria-hidden="true">Toph, the Blind Bandit by
 Yueko</figcaption>
 </figure>

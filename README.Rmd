@@ -45,7 +45,7 @@ names(avatar_palettes)
 
 # Inspiration
 
-![Aang, the Last Airbender by Yueko ](E:/GitHub/Gerardo/Avatar/AvatarTLA/fig/aang.jpg)
+![Aang, the Last Airbender by Yueko](fig/aang.jpg)
 
 # Color palette inspired by Aang
 
@@ -57,7 +57,7 @@ avatar_palette("Aang")
 
 # Inspiration
 
-![Toph, the Blind Bandit by Yueko ](E:/GitHub/Gerardo/Avatar/AvatarTLA/fig/toph.jpg)
+![Toph, the Blind Bandit by Yueko](fig/toph.jpg)
 
 # Color palette inspired by Toph
 
