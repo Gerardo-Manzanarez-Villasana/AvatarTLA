@@ -5,7 +5,7 @@
 \alias{avatar_palettes}
 \title{Complete list of Avatar palettes}
 \format{
-An object of class \code{list} of length 7.
+An object of class \code{list} of length 14.
 }
 \usage{
 avatar_palettes

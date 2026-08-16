@@ -11,6 +11,14 @@ Color palettes inspired by characters and nations from the animated series Avata
 \details{
 Color palettes inspired by characters and nations from the animated series Avatar: The Last Airbender for use in R graphics.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/Gerardo-Manzanarez-Villasana/AvatarTLA}
+  \item Report bugs at \url{https://github.com/Gerardo-Manzanarez-Villasana/AvatarTLA/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Gerardo Manzanarez-Villasana \email{jupiter.gmv@gmail.com}
 

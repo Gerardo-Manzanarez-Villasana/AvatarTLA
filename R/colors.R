@@ -14,7 +14,14 @@ avatar_palettes <- list(
   EarthKingdom = c("#015E05", "#B1A866", "#7A5C12", "#646742", "#25351C",
                    "#4C7022", "#C7C45E", "#D2CFAB", "#FEFED8"),
   WaterTribe = c("#0047ab", "#1DB4D3", "#A2CAED", "#AFB5B8", "#120976",
-                 "#fffafa", "#174D79", "#949BBC")
+                 "#fffafa", "#174D79", "#949BBC"),
+  Appa = c("#6C633B","#591509","#936F50","#FEF7DB","#E7CE9A","#4A4F4F"),
+  Sokka = c("#488ECB","#F6F5F4","#E7C2A5","#7C6A66","#5A3D2F","#A27F43"),
+  Toph = c("#1C2824","#437C1E","#F1EFC2","#FBFBFB","#F7D7B7","#BEB718"),
+  Azula = c("#010101","#713011","#ECD8C0","#9F6B22"),
+  Aang = c("#F9EFE3","#B6D7F4","#F4C135","#EE7223","#6E1700","#715447"),
+  Zuko = c("#441100","#6E3208","#A77510","#E6BD9E","#A46A44"),
+  Katara = c("#007CC3","#50413A","#FEFEFE","#F1DCC9","#A5A9AC","#383C1A")
 )
 
 #' An Avatar: The Last Airbender palette generator
@@ -22,8 +29,20 @@ avatar_palettes <- list(
 #' Color palettes inspired by characters and nations from Avatar: The Last Airbender.
 #'
 #' @param name Name of desired palette. Choices are:
-#'   \code{Mai}, \code{Suki}, \code{Iroh},
-#'   \code{FireNation}, \code{AirNomads}, \code{EarthKingdom}, \code{WaterTribe}.
+#'   \code{Mai}
+#'   \code{Suki}
+#'   \code{Iroh}
+#'   \code{FireNation}
+#'   \code{AirNomads}
+#'   \code{EarthKingdom}
+#'   \code{WaterTribe}
+#'   \code{Appa}
+#'   \code{Sokka}
+#'   \code{Toph}
+#'   \code{Azula}
+#'   \code{Aang}
+#'   \code{Zuko}
+#'   \code{Katara}
 #' @param n Number of desired colors. If omitted, uses all colors from the palette.
 #' @param type Either "discrete" or "continuous". Use continuous if you want
 #'   to automatically interpolate between colors.
@@ -31,9 +50,9 @@ avatar_palettes <- list(
 #' @export
 #' @keywords colors
 #' @examples
-#' avatar_palette("FireNation")
-#' avatar_palette("WaterTribe", 3)
-#' avatar_palette("AirNomads", 30, type = "continuous")
+#' avatar_palette("Toph")
+#' avatar_palette("Aang", 3)
+#' avatar_palette("EarthKingdom", 30, type = "continuous")
 avatar_palette <- function(name, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
 

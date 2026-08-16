@@ -8,8 +8,9 @@ avatar_palette(name, n, type = c("discrete", "continuous"))
 }
 \arguments{
 \item{name}{Name of desired palette. Choices are:
-\code{Mai}, \code{Suki}, \code{Iroh},
-\code{FireNation}, \code{AirNomads}, \code{EarthKingdom}, \code{WaterTribe}.}
+\code{Mai},\code{Suki},\code{Iroh},\code{FireNation},\code{AirNomads},
+\code{EarthKingdom},\code{WaterTribe},\code{Appa},\code{Sokka},
+\code{Toph},\code{Azula},\code{Aang},\code{Zuko},\code{Katara}.}
 
 \item{n}{Number of desired colors. If omitted, uses all colors from the palette.}
 
@@ -23,8 +24,8 @@ A vector of colors.
 Color palettes inspired by characters and nations from Avatar: The Last Airbender.
 }
 \examples{
-avatar_palette("FireNation")
-avatar_palette("WaterTribe", 3)
-avatar_palette("AirNomads", 30, type = "continuous")
+avatar_palette("Toph")
+avatar_palette("Aang", 3)
+avatar_palette("EarthKingdom", 30, type = "continuous")
 }
 \keyword{colors}
