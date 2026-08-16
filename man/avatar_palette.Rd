@@ -8,9 +8,20 @@ avatar_palette(name, n, type = c("discrete", "continuous"))
 }
 \arguments{
 \item{name}{Name of desired palette. Choices are:
-\code{Mai},\code{Suki},\code{Iroh},\code{FireNation},\code{AirNomads},
-\code{EarthKingdom},\code{WaterTribe},\code{Appa},\code{Sokka},
-\code{Toph},\code{Azula},\code{Aang},\code{Zuko},\code{Katara}.}
+\code{Mai}
+\code{Suki}
+\code{Iroh}
+\code{FireNation}
+\code{AirNomads}
+\code{EarthKingdom}
+\code{WaterTribe}
+\code{Appa}
+\code{Sokka}
+\code{Toph}
+\code{Azula}
+\code{Aang}
+\code{Zuko}
+\code{Katara}}
 
 \item{n}{Number of desired colors. If omitted, uses all colors from the palette.}
 

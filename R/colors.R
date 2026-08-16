@@ -29,19 +29,19 @@ avatar_palettes <- list(
 #' Color palettes inspired by characters and nations from Avatar: The Last Airbender.
 #'
 #' @param name Name of desired palette. Choices are:
-#'   \code{Mai}
-#'   \code{Suki}
-#'   \code{Iroh}
-#'   \code{FireNation}
-#'   \code{AirNomads}
-#'   \code{EarthKingdom}
-#'   \code{WaterTribe}
-#'   \code{Appa}
-#'   \code{Sokka}
-#'   \code{Toph}
-#'   \code{Azula}
-#'   \code{Aang}
-#'   \code{Zuko}
+#'   \code{Mai},
+#'   \code{Suki},
+#'   \code{Iroh},
+#'   \code{FireNation},
+#'   \code{AirNomads},
+#'   \code{EarthKingdom},
+#'   \code{WaterTribe},
+#'   \code{Appa},
+#'   \code{Sokka},
+#'   \code{Toph},
+#'   \code{Azula},
+#'   \code{Aang},
+#'   \code{Zuko},
 #'   \code{Katara}
 #' @param n Number of desired colors. If omitted, uses all colors from the palette.
 #' @param type Either "discrete" or "continuous". Use continuous if you want
