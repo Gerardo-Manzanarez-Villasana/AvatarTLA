@@ -1,6 +1,6 @@
 Package: AvatarTLA
 Type: Package
-Title: Color Palettes from Avatar: The Last Airbender
+Title: Color Palettes from 'Avatar: The Last Airbender'
 Version: 0.1.0
 Authors@R: c(
     person(
@@ -9,7 +9,7 @@ Authors@R: c(
       role = c("aut", "cre")
     )
   )
-Description: Color palettes inspired by characters and nations from the animated series Avatar: The Last Airbender for use in R graphics.
+Description: Color palettes inspired by characters and nations from the animated series 'Avatar: The Last Airbender' for use in R graphics.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Imports:
@@ -18,3 +18,4 @@ Imports:
 RoxygenNote: 7.3.3
 URL: https://github.com/Gerardo-Manzanarez-Villasana/AvatarTLA
 BugReports: https://github.com/Gerardo-Manzanarez-Villasana/AvatarTLA/issues
+Language: en-US
