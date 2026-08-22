@@ -3,8 +3,6 @@
 
 <!-- badges: start -->
 
-[![Monthly
-Downloads](https://cranlogs.r-pkg.org/badges/AvatarTLA)](https://cran.r-project.org/package=AvatarTLA)
 [![Ko-fi](https://img.shields.io/badge/Support%20me%20on-Ko--fi-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/gerardomv)
 <!-- badges: end -->
 
